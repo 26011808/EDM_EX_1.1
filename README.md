@@ -1,52 +1,88 @@
-# Ex.No.-1.1-Design and Draft the given 2D Sketches in modelling software.
+##EXPERIMENT NO. 1.1
 
-## AIM
+Design and Draft the Given 2D Sketches in Modelling Software
 
-To sketch the given drawing with dimensions using fusion 360 tool.
+##AIM
 
-## REQUIREMENTS
+To create the given 2D mechanical component using modelling software by following the specified dimensions and drafting requirements.
 
-  1. Autodesk fusion 360
-  2. Windows 10
-  3. 16 GB of RAM (integrated graphics recommend 2 GB or more)
-  4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
-  
-## PROCEDURE
+##REQUIREMENTS / TOOLS NEEDED
 
-1.	Open new file and then select sketch icon.
-2.	Select the plane for sketching. 
-3.	Use sketching features (line, circle, arc, rectangle, polygon, etc.,) to draw the given sketch
+Software:
 
-![image](https://user-images.githubusercontent.com/113594316/198206497-ca83d495-119b-45cd-b43d-8ca3ea7e9544.png)
+Fusion 360 / CAD modelling software.
 
-4.	Use sketch modifying features (cut, trim, mirror, move, etc.,) to edit the sketch.
+Drafting Tools / Commands:
 
-![image](https://user-images.githubusercontent.com/113594316/198206562-68463016-3f32-4a87-aa5b-7a17dd023b31.png)
+Draw Commands: Line, Circle (Center-Radius, Center-Diameter), Arc, Trim and Offset.
 
-5.	Use inspect feature to measure the dimensions of sketch.
+Modify Commands:
 
-![image](https://user-images.githubusercontent.com/113594316/198206621-6348e8a3-4bbd-4a1f-96d3-db16fbf933d9.png)
+Fillet, Mirror, Polar Array, Trim and Extend.
 
-6.	After finishing the sketch use finish sketch option to finalize the sketch.
+##PROCEDURE
 
-![image](https://user-images.githubusercontent.com/113594316/198206639-31c4bdb5-b13e-4106-bcf5-125c294aa03e.png)
+Step 1: Setting Up the Workspace and Reference Axes
 
-7.	After finishing the sketch switch to drawing mode to plot the sketch in ISO standard.
+1. Set the drawing units to millimeters (mm) with a precision of 0.00 mm.
 
-![image](https://user-images.githubusercontent.com/113594316/198206697-2e3ead2b-7d1e-436e-bc36-aa2e73c1e78e.png)
+2. Create a vertical centerline through the main axis of symmetry.
 
-![image](https://user-images.githubusercontent.com/113594316/198206721-8ad45462-2675-4be2-964f-621c8fc4490e.png)
+3. Create the required horizontal reference lines with respect to the origin: the top circle center is 65 mm above the central axis; the middle lower horizontal reference is 26 mm below the central axis; the bottom circle center is 24 mm below the middle horizontal reference, making it 50 mm below the central axis.
 
-## SKETCHS
-![image](https://user-images.githubusercontent.com/113594316/198208087-87ed794e-5f1c-4583-82e0-f29699dfc305.png)
-
-<img width="812" height="676" alt="1000032674" src="https://github.com/user-attachments/assets/2d744acb-2bfb-41b7-b7b8-4b5694189cfe" />
-
-## OUTPUT
-<img width="946" height="673" alt="1000038894" src="https://github.com/user-attachments/assets/14966f86-60a5-4c85-8f28-391d49b57a48" />
-<img width="648" height="665" alt="1000038904" src="https://github.com/user-attachments/assets/731cb114-c738-4a40-b3ad-0258b5eca23e" />
+<img width="602" height="916" alt="Screenshot 2026-11-26 083519" src="https://github.com/user-attachments/assets/76d23fc7-a7f4-4550-ac5f-3add6692a134" />
 
 
+Step 2: Creating the Central Profile
 
-## RESULT
-Thus the given sketch is drawn and drafted using fusion 360 tool.
+1. From the main origin, create the reference circles: inner circle Ø40 mm (R20 mm) and outer pitch circle Ø66 mm (R33 mm).
+
+2. Create the internal circular cutouts with radius R6 mm.
+
+3. Arrange the R6 mm semicircular cutouts uniformly around the central profile using a Polar Array with 6 items.
+
+4. Trim the unwanted portions of the arcs to obtain the required continuous internal star/spline profile.
+
+<img width="627" height="830" alt="Screenshot 2026-11-26 083534" src="https://github.com/user-attachments/assets/a6906239-1f99-4add-b7ed-774e79265e88" />
+
+
+Step 3: Creating the Outer Lugs and Circular Ends
+
+1. Top Lug: At 65 mm above the center, create an inner hole of Ø20 mm (R10 mm) and an outer boundary circle of Ø32 mm (R16 mm).
+
+2. Bottom Center Lug: At 50 mm below the main center along the vertical centerline, create an inner hole of Ø10 mm (R5 mm) and an outer arc of Ø20 mm (R10 mm).
+
+3. Left and Right Lower Lugs: Locate the centers 47 mm to the left and right of the vertical centerline and 26 mm below the main center. For the left side, use an inner hole of R7 mm and an outer curve of R10 mm. For the right side, use an outer curve of R10 mm with a symmetric arrangement.
+
+<img width="612" height="905" alt="Screenshot 2026-11-26 083549" src="https://github.com/user-attachments/assets/4942fce6-f7c1-4385-a54e-b2446f905e4a" />
+
+
+Step 4: Creating Connecting Tangent Arcs and Fillet
+
+1. Upper Outer Curves: Connect the outer boundary of the top lug to the central profile using concave arcs of R64 mm on both sides using the Tangent-Tangent-Radius (TTR) Fillet method.
+
+2. Lower Outer Tangent Arcs: Create the connecting fillets between the central body and lower side lugs: left-side transition fillet R20 mm and right-side transition fillet R10 mm.
+
+3. Create the bottom connecting arc between the bottom center lug and the lower side lugs using a radius of R20 mm.
+
+
+Step 5: Trimming and Dimensioning
+
+1. Use the Trim command to remove construction lines, overlapping arcs and unwanted internal geometric elements.
+
+2. Apply centerlines to all the circular holes.
+
+3. Add the required dimensions: Ø20, Ø32, Ø40, Ø66, R64, R20, R10, R7, R6 and linear dimensions 65, 26, 24 and 47 mm.
+
+
+##OUTPUT
+
+The completed 2D mechanical sketch is obtained in the modelling software according to the given dimensions and specifications.
+<img width="946" height="673" alt="Screenshot 2026-11-22 175722" src="https://github.com/user-attachments/assets/76214062-e5f9-4c1e-9af8-ba2b02bc726f" />
+<img width="648" height="665" alt="Screenshot 2026-11-22 182910" src="https://github.com/user-attachments/assets/74455644-b0c3-4461-a2c0-33c6ad51bd01" />
+
+##RESULT
+
+Thus, the given 2D sketch was successfully designed and drafted using Fusion 360.
+
+
