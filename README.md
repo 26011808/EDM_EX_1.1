@@ -1,12 +1,12 @@
-##EXPERIMENT NO. 1.1
+EXPERIMENT NO. 1.1
 
 Design and Draft the Given 2D Sketches in Modelling Software
 
-##AIM
+AIM
 
 To create the given 2D mechanical component using modelling software by following the specified dimensions and drafting requirements.
 
-##REQUIREMENTS / TOOLS NEEDED
+REQUIREMENTS / TOOLS NEEDED
 
 Software:
 
@@ -20,7 +20,7 @@ Modify Commands:
 
 Fillet, Mirror, Polar Array, Trim and Extend.
 
-##PROCEDURE
+PROCEDURE:
 
 Step 1: Setting Up the Workspace and Reference Axes
 
@@ -75,13 +75,13 @@ Step 5: Trimming and Dimensioning
 3. Add the required dimensions: Ø20, Ø32, Ø40, Ø66, R64, R20, R10, R7, R6 and linear dimensions 65, 26, 24 and 47 mm.
 
 
-##OUTPUT
+OUTPUT:
 
 The completed 2D mechanical sketch is obtained in the modelling software according to the given dimensions and specifications.
 <img width="946" height="673" alt="Screenshot 2026-11-22 175722" src="https://github.com/user-attachments/assets/76214062-e5f9-4c1e-9af8-ba2b02bc726f" />
 <img width="648" height="665" alt="Screenshot 2026-11-22 182910" src="https://github.com/user-attachments/assets/74455644-b0c3-4461-a2c0-33c6ad51bd01" />
 
-##RESULT
+RESULT:
 
 Thus, the given 2D sketch was successfully designed and drafted using Fusion 360.
 
